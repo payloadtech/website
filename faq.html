@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Payload | FAQ</title>
+ <link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
+  
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+	<link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/faq.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+	var w = window.outerWidth;
+      function viewChange(){
+        w = window.outerWidth;
+        if(w<=736){
+          document.getElementById('navbar').style.display="none";
+        }
+        else{
+          document.getElementById('navbar').style.display="inline";
+        }
+        if(w<=1024){
+          $('.powerBack').css({top:10, position:'absolute'});
+          $('.powerP').css({display:'block'});
+        }
+        else if(w>=1024){
+          $('.powerP').css({display:'none'});
+        }
+        //$('#scrollspy').css('margin-bottom','64px');
+        scrollChange();
+      }
+      function drop(){
+        if(document.getElementById('navbar').style.display=="none"){
+          document.getElementById('navbar').style.display="inline";
+          //$('#scrollspy').css('margin-bottom','119px');
+        }
+        else{
+          document.getElementById('navbar').style.display="none";
+          //$('#scrollspy').css({bottom:64, position:'fixed'});
+          //$('#scrollspy').css('margin-bottom','64px');
+        }
+      }
+      function scrollChange(){
+        var height = $(window).scrollTop();
+        w = window.outerWidth;
+        if(height>=1260){
+          //$('#scrollspy').css('display','block');
+        }
+        else{
+          //$('#scrollspy').css('display','none');
+
+		  }
+        if(w>736){
+          if(height>=1890){
+            //$('#scrollspy').css('display','none');
+            $('#nav').css('display','none');
+          }
+          else {
+            $('#nav').css('display','block');
+          }
+        }
+        else{
+          $('#nav').css('display','block');
+        }
+        if(w<=736){
+          /*
+          if((height>1260) && (height<1890)){
+            $('#powerMonitor').css('display','block');
+            $('#worksMonitor').css('display','none');
+            $('#testimonialsMonitor').css('display','none');
+            $('#merchantsMonitor').css('display','none');
+          }
+          else if((height>1890) && (height<12520)){
+            $('#powerMonitor').css('display','none');
+            $('#worksMonitor').css('display','block');
+            $('#testimonialsMonitor').css('display','none');
+            $('#merchantsMonitor').css('display','none');
+          }
+          else if((height>2520) && (height<3150)){
+            $('#powerMonitor').css('display','none');
+            $('#worksMonitor').css('display','none');
+            $('#testimonialsMonitor').css('display','block');
+            $('#merchantsMonitor').css('display','none');
+          }
+          else if((height>3150)){
+            $('#powerMonitor').css('display','none');
+            $('#worksMonitor').css('display','none');
+            $('#testimonialsMonitor').css('display','none');
+            $('#merchantsMonitor').css('display','block');
+          }
+          */
+          /*
+          if((height>630) && (height<1260)){
+            $('#powerMonitor').show();
+            $('#worksMonitor').hide();
+            $('#testimonialsMonitor').hide();
+            $('#merchantsMonitor').hide();
+          }
+          else if((height>1260) && (height<1890)){
+            $('#powerMonitor').hide();
+            $('#worksMonitor').show();
+            $('#testimonialsMonitor').hide();
+            $('#merchantsMonitor').hide();
+          }
+          else if((height>1890) && (height<2520)){
+            $('#powerMonitor').hide();
+            $('#worksMonitor').hide();
+            $('#testimonialsMonitor').show();
+            $('#merchantsMonitor').hide();
+          }
+          else if((height>2520) && (height<31500)){
+            $('#powerMonitor').hide();
+            $('#worksMonitor').hide();
+            $('#testimonialsMonitor').hide();
+            $('#merchantsMonitor').show();
+          }
+          */
+        }
+        else{
+          /*
+          $('#powerMonitor').css('display','block');
+          $('#worksMonitor').css('display','block');
+          $('#testimonialsMonitor').css('display','block');
+          $('#merchantsMonitor').css('display','block');
+          */
+        }
+      }
+      $(document).ready(function(){
+        $('#safe').hover(function(){
+          if(w>1024){
+            $('#safeP').slideToggle(736);
+            $('#safeBack').animate({top:'+=300px'},736);
+          }
+        },
+        function(){
+          if(w>1024){
+            $('#safeP').slideToggle(736);
+            $('#safeBack').animate({top:'-=300px'},736);
+          }
+        });
+        $('#instant').hover(function(){
+          if(w>1024){
+            $('#instantP').slideToggle(736);
+            $('#instantBack').animate({top:'+=300px'},736);
+          }
+        },
+        function(){
+          if(w>1024){
+            $('#instantP').slideToggle(736);
+            $('#instantBack').animate({top:'-=300px'},736);
+          }
+        });
+        $('#free').hover(function(){
+          if(w>1024){
+            $('#freeP').slideToggle(736);
+            $('#freeBack').animate({top:'+=340px'},736);
+          }
+        },
+        function(){
+          if(w>1024){
+            $('#freeP').slideToggle(736);
+            $('#freeBack').animate({top:'-=340px'},736);
+          }
+        });
+        $(window).scroll(function(){
+
+        });
+      });
+    </script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onscroll="scrollChange()" onresize="viewChange()" onload="viewChange()">
+
+
+<div class="page-header">
+<div class="container">
+
+<div class="navbar-text" style="width:100%">
+<img src="images/logoWhite.png" height="50" alt="payload">Payload
+<img style="float:right" src="images/bitCoin.png" alt="bitCoin"/>
+</div>
+
+	<div class="col-lg-12">
+		<img class="img-responsive" src="images/intro.png" style="margin-top:5.5%" alt="Learn About BitCoin"/>
+	</div>
+	
+<!-- Bootstrap FAQ - START -->
+
+   <div class="row">
+   <h2 id="h2m">Watch this!</h2>
+    <div class="col-sm-8 col-sm-offset-2">  
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://player.vimeo.com/video/63502573" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/63502573">Bitcoin Explained</a> from <a href="https://vimeo.com/duncanelms">Duncan Elms</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</div>
+    </div>
+    </div>
+    <br />
+
+    <div class="panel-group" id="accordion">
+        <div class="faqHeader">Frequently Asked Questions!</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is bitcoin?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    An agreement amongst a community of people to use 21 million secure mathematical tokens, "bitcoins", as money - just like everyone agrees that the paper currency issued by Central Banks is also money.<br><br>
+
+Bitcoin is the first decentralized electronic currency not controlled by a single organization or 
+government. It's an open source project, protected by the Blockchain Protocol and is used all over the world. People are trading hundreds of thousands of dollars worth of bitcoin every day with no middle man and no credit card companies. It's a startup currency which has never happened before.<br><br>
+
+Bitcoin is the first digital currency that is completely distributed. The network is made up of users like yourself so no bank or payment processor is required between you and whoever you're trading with. This decentralization is the basis for Bitcoin's security and freedom.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How does Bitcoin work?</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Who created Bitcoin?</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Who controls the Bitcoin network?</a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                   
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How are Bitcoins created?</a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How are Bitcoins created?</a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Why do people trust Bitcoin?</a>
+                </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Is Bitcoin anonymous?</a>
+                </h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Is Bitcoin legal?</a>
+                </h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What determines Bitcoin's price?</a>
+                </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+            </div>
+        </div>
+		<span>
+      <div class="container">
+		<div><img class="img-responsive" src="images/question.png" alt="Got A Question Of Your Own ?"  style="margin-top:5%; margin-bottom:8%"></div>
+		</div>
+		</span>
+        
+    </div>
+</div>
+
+<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+		
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color:#FFFFFF;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+</style>
+
+<!-- Bootstrap FAQ - END -->
+
+</div>
+ 
+  <div id="nav"><!--Footer-->
+      <div id="copyright"><!--Copyright logo and message-->
+        <p>&#169; Copyright 2015 Payload</p>
+      </div>
+      <button id="dropdown" onclick="drop()" type="button"><i class="fa fa-bars"><!--fa-sort-asc--></i></button><!--Dropup menu button with font awesome icon-->
+      <div id="social-icons"><!--Facebook and Twitter image links-->
+        <a href="https://facebook.com.payloadpk"><img src="images/Facebook.png" alt="Like Us On Facebook" /></a>
+        <a href="https://twitter.com/payloadpk"><img src="images/Twitter.png" alt="Follow Us On Twitter" /></a>
+      </div>
+      <div id="navbar"><!--Links and dividers-->
+       
+        <a id="homeLink" href="#">HOME</a>
+        <span id="dividerLine1">|</span>
+        <a id="about" href="#">ABOUT</a>
+        <span id="dividerLine2">|</span>
+        <a id="help" href="#">HELP</a>
+        <span id="dividerLine3">|</span>
+		<a id="term" href="#">TERM</a>
+		<span id="dividerLine4">|</span>
+		<a id="contact" href="#">CONTACT</a>
+        <span id="dividerLine5">|</span>
+        <a id="download" href="#">DOWNLOAD APP</a>
+        
+      </div>
+    </div>
+
+</body>
+</html>

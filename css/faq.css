@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'MyMUli';
+	src: url('../fonts/Muli.ttf') format('truetype');
+}
+body{
+	color:#FFFFFF;
+}
+#h2m{
+	color:#6b6c6c;
+	font-weight:bold;
+}
+.faqHeader{
+	color:#6b6c6c;
+	font-weight:bold;
+}
+
+

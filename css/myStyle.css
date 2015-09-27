@@ -1,0 +1,262 @@
+body{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#016581+0,1685a3+28,043644+100 */
+	
+	
+	background-color: #016581; /* Old browsers */
+background-image: -moz-linear-gradient(left,  #016581 0%, #1685a3 28%, #043644 100%); /* FF3.6+ */
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#016581), color-stop(28%,#1685a3), color-stop(100%,#043644)); /* Chrome,Safari4+ */
+background-image: -webkit-linear-gradient(left,  #016581 0%,#1685a3 28%,#043644 100%); /* Chrome10+,Safari5.1+ */
+background-image: -o-linear-gradient(left,  #016581 0%,#1685a3 28%,#043644 100%); /* Opera 11.10+ */
+background-image: -ms-linear-gradient(left,  #016581 0%,#1685a3 28%,#043644 100%); /* IE10+ */
+background-image: linear-gradient(to right,  #016581 0%,#1685a3 28%,#043644 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016581', endColorstr='#043644',GradientType=1 ); /* IE6-9 */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-attachment:fixed;
+
+}
+
+.myWrapper{
+	width:1200px; 
+	margin:auto;
+	
+}
+
+.myH2 {	
+	text-align:left;
+	display:inline; 
+	float:right;
+	width:100%;
+	text-shadow:2px 2px #0f6a82;
+	font-family:MyMUli;
+	font-size:70px;
+}
+.myH3 {
+	text-shadow:2px 2px #0f6a82;
+	font-family:MyMUli;
+	font-size:35px;
+	}
+.sec3H2{
+	margin-top:5px;
+	margin-bottom:10px;
+	text-shadow: 2px 2px #0f6a82;
+	font-family:MyMUli;
+	font-size:70px;
+	font-weight:100;
+	text-align:left; 
+}
+.sec3H3{
+	margin-top:5px;
+	margin-bottom:10px;
+	text-shadow: 2px 2px #0f6a82;
+	font-family:MyMUli;
+	font-size:25px;
+	font-weight:100;
+	text-align:left;
+}
+
+.div1{
+	background-image:url(../images/1.png);
+	background-repeat:no-repeat;
+	height:170px;
+	text-align:right;
+	margin:0 0 0 0;
+	position:relative;
+	background-position:right;
+	padding:0 20px 0 0;
+	color:#128693;
+}
+.div2{
+	background-image:url(../images/2.png);
+	background-repeat:no-repeat;
+	height:170px;
+	text-align:right;
+	margin:-50px 140px 0 0;
+	position:relative;
+	background-position:right;
+	padding:5px 130px 0 0;
+	color:#3d90a5;
+}
+.div3{
+	background-image:url(../images/3.png);
+	background-repeat:no-repeat;
+	height:170px;
+	text-align:right;
+	margin:20px 140px 0 0;
+	position:relative;
+	background-position:right;
+	padding:30px 120px 0 0;
+	color:#568094;
+}
+.div4{
+	background-image:url(../images/4.png);
+	background-repeat:no-repeat;
+	height:170px;
+	text-align:right;
+	margin:-50px 0px 0 0;
+	position:relative;
+	background-position:right;
+	padding:40px 200px 0 0;
+	color:#216e88;
+}
+.div5{
+	background-image:url(../images/5.png);
+	background-repeat:no-repeat;
+	height:160px;
+	text-align:left;
+	margin:0px 0 0 0px;
+	background-position:left bottom;
+	position:relative; 
+	padding:10px 0 0 150px;
+	color:#216e88;
+}
+.div6{
+	background-image:url(../images/6.png);
+	background-repeat:no-repeat;
+	height:160px;
+	text-align:left;
+	margin:-20px 0 0 140px;
+	background-position:left bottom;
+	position:relative; 
+	padding:80px 0 0 130px;
+	color:#568094;
+}
+.div7{
+	background-image:url(../images/7.png);
+	background-repeat:no-repeat;
+	height:160px;
+	text-align:left;
+	margin:55px 0 0 140px;
+	background-position:left bottom;
+	position:relative; 
+	padding:80px 0 0 120px;
+	color:#2e6f80;
+}
+.div8{
+	background-image:url(../images/8.png);
+	background-repeat:no-repeat;
+	height:160px;
+	text-align:left;
+	margin:-60px 0 0 0px;
+	background-position:left bottom;
+	position:relative; 
+	padding:110px 0 0 20px;
+	color:#128693;
+}
+.div1:hover
+{	
+	background-image:url(../images/1white.png);
+}
+.div2:hover
+{	
+	background-image:url(../images/2white.png);
+}
+.div3:hover
+{	
+	background-image:url(../images/3white.png);
+}
+.div4:hover
+{	
+	background-image:url(../images/4white.png);
+}
+.div5:hover
+{	
+	background-image:url(../images/5white.png);
+}
+.div6:hover
+{	
+	background-image:url(../images/6white.png);
+}
+.div7:hover
+{	
+	background-image:url(../images/7white.png);
+}
+.div8:hover
+{	
+	background-image:url(../images/8white.png);
+}
+
+.div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover,.div6:hover,.div7:hover,.div8:hover{
+	color:#FFFFFF;
+}
+.myFooter{	
+	background-color:#2c2c2c;
+	width:100%;
+	height:300px;
+	bottom:0;
+	left:0;	
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	#plugCoin{
+	display: none;
+	}
+	#top-circle{
+	display:none;
+	}
+	#faisal{
+	display: none;
+	}#myFooter{
+	display:none;
+	}
+	#pImage{
+	display:none;
+	}
+	#iPhone{
+		display:none;
+		}
+	#dics{
+	diaplay:none;
+	}
+	#plug-play-left{
+	display:none;
+	}
+	#plg-play-right
+	{
+	display:none;
+	}
+	#accept{
+	display:none;
+	}
+	#header{
+	display:none;
+	}
+	#how-it-works{
+		font-size: 20px;
+		}.
+}
+
+@media screen and (min-width: 1200px){
+
+	#mobileDiv{
+	display:none;
+	}	
+	#mobileDiv1{
+	display:none;
+	}
+	#mobileDiv2{
+	display:none;
+	}
+	#mobileFooter{
+	display:none;
+	}
+	#mobileHeader{
+	display:none;
+	}#vidoe-space{
+	display:none;
+	}#bit-thing{
+	display:none;
+	}#mob{
+	display:none;
+	}
+	#circle-1{
+	display:none;
+	}
+	
+	
+	
+}
