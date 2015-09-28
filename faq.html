@@ -2,17 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Payload | FAQ</title>
- <link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
-  
+    <title>Payload | FAQ</title>	
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 	<link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/faq.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"  />
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  
     <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/index.css" />
 
@@ -22,7 +21,7 @@
 	
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script>
 	var w = window.outerWidth;
       function viewChange(){
@@ -212,6 +211,8 @@
 
     <div class="panel-group" id="accordion">
         <div class="faqHeader">Frequently Asked Questions!</div>
+      
+      <!--  What is bitcoin ? -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -229,18 +230,32 @@ Bitcoin is the first digital currency that is completely distributed. The networ
                 </div>
             </div>
         </div>
+           
+       <!-- How does Bitcoin works -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How does Bitcoin work?</a>
                 </h4>
             </div>
+            
             <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
+                    
+                    From a user perspective, Bitcoin is nothing more than a mobile app or computer program that provides a personal Bitcoin wallet and enables a user to send and recieve bitcoins.
+                    <br>
+                    <br>
+                    Behind the scenes, the Bitcoin network is sharing a massive public ledger  called the "block chain". This ledger contains every transaction every processed which enables a user's computer to verify the validity of each transaction. The authenticity of each transaction is protected by digital signatures corresponding to the sending addresses therefore allowing all users to have full control over sending bitcoins.
+                    <br>
+                    <br>
+                    Thus, there is no fraud, no chargebacks and no identifying information that could be compromised resulting in identity theft.
                     
                 </div>
             </div>
         </div>
+     
+     
+     <!-- Who created bitcoin > -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -249,11 +264,15 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
                 <div class="panel-body">
-                   
+                   The first Bitcoin specification and proof of concept was published in 2009 by an unkown individual under the pseudonym Satoshi Nakamota who revealed little about himself and left the project in late 2010. The Bitcoin community has since grown exponentially.
+                   <br>
+                   <br>
+                   Everyone has access to all the source code all of the time any developer can review or modify the software code. As such, the identity of Bitcoin's inventer is probably as relevent today as the identity of person who invented paper.
                 </div>
             </div>
         </div>
 
+       <!-- Who controls the Bitcoin Network -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -262,11 +281,13 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
                 <div class="panel-body">
-                    
+                   Nobody owns the Bitcoin network much like no one owns the technology behinds email or the Internet. As the heart of the system, the block chain fixes all the problems by creating a single master registry of the already cryptographically-secured bitcoin transfers, verifying them and locking them down in a highly competitive market called mining.
                    
                 </div>
             </div>
         </div>
+        
+        <!-- How are bitcopins created ? -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -275,22 +296,12 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
                 <div class="panel-body">
-                  
-                </div>
+                  New bitcoins are generated by competitive and decentralized process called "mining". The process involves that individuals are rewarded by the network for their services. Bitcoin miners are processing transactions and securing the metworks using specialized hardware and are collecting new bitcoins in exchange. 
+                 </div>
             </div>
         </div>
-         <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How are Bitcoins created?</a>
-                </h4>
-            </div>
-            <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
-                  
-                </div>
-            </div>
-        </div>
+    
+   	    <!-- Why do people trust Bitcoin ? -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -299,10 +310,15 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseSeven" class="panel-collapse collapse">
                 <div class="panel-body">
-                  
+                  The trust os accomplished by the use of powerful cryptography many times stronger than that used by banks. Instead of simply being "sent" coins have to be cryptographically signed over from one entity to another, essentially putting a lock and key on each token so that bitcoins can be securely backup in multiple places, and so that copying doesn't increase the amount you own.
+                  <br>
+                  <br>
+                  Bitcoin user are in full control of their transactions; it is possible for merchants to force unwanted or unnoticed charges as can happen with other payment methods. Bitcoin payments can be made without personal information tied to the transaction. This offers strong protection against identity theft. Bitcoin users can also protect their money with backup and encryption.
                 </div>
             </div>
         </div>
+    
+    	<!-- Is Bitcoin anonymous ? --> 
          <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -311,10 +327,12 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseEight" class="panel-collapse collapse">
                 <div class="panel-body">
-                  
+                  Bitcoin is designed to allow its users to send and recieve payments with an acceptable level of privacy as well as any other form of money. However, Bitcoin in not anonymous and cannot offer the same level of privacy as cash. The use of Bitcoin leaves extensive public record. Various mechanisms exist to protect users' privacy .
                 </div>
             </div>
         </div>
+        
+        <!-- Is Bitcoin legal ? -->
          <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -323,10 +341,13 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseNine" class="panel-collapse collapse">
                 <div class="panel-body">
-                  
+                 The Financial Crimes Enforcement Network (FinCEN), which is an agency within the USA Treasury Department, took the initiative to regulate Bitcoin activities. It published guidelines about the use of virtual currencies. Since then, Bitcoin has been deemed legal in most countries, and is awaiting a proper legal status in just a few countries. Jutrisdictions such as Argentina and Russia severly restrict or ban foriegn currencies. The legal status of Bitcoin has not been challenged in Pakistan so far.
+                 
                 </div>
             </div>
         </div>
+        
+        <!-- What determines  Bitcoin Price ? -->
          <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -335,8 +356,8 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
             <div id="collapseTen" class="panel-collapse collapse">
                 <div class="panel-body">
-                  
-                </div>
+                  The price of Bitcoin is determined by supply and demand. When demand for bitcoin increases the price increases, and when demand falls, the price falls. There is only a limited number of bitcoins in circulation and new bitcoins are created at a predictable and decreasing rate, which means that demand must follows this level of inflation to keep tha price stable.
+                </div> 
             </div>
         </div>
 		<span>
