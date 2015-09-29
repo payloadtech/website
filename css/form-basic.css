@@ -6,15 +6,20 @@
 html{
     background-color: #47b6d4;
 	font-family:MyMUli;
+	background-image:url(../images/sign_up_guy.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	
+	
 }
 
 .form-basic{
     max-width: 740px;
     padding: 10px 5px;
-     margin: 100px auto;
+    margin: 100px auto;
     box-sizing: border-box;
 
-    background-color:  #47b6d4;
+  
    
 
     font: bold 14px MyMUli;
@@ -156,11 +161,7 @@ myspan {
     if you don't need the form to work on mobile devices. */
 
 
-@media screen and (max-width: 1180px) {
-    #image-Id{
-        display: none;
-    }
-}
+
 @media (max-width: 600px) {
 
     .form-basic{
@@ -199,5 +200,8 @@ myspan {
     .form-basic button{
         margin: 0;
     }
-
+    html{
+		
+		background-image:none;
+		}
 }
