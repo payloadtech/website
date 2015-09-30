@@ -203,9 +203,30 @@ body{
   position:absolute;
   z-index:-1;
 }
+#home{
+  overflow:hidden;
+}
 #home p{
   font-family:'Muli', sans-serif;
   font-size:34pt;
+}
+.item{
+  height:560px !important;
+  width:100% !important;
+  text-align:center !important;
+}
+.slideImage{
+  display:inline !important;
+}
+#myCarousel{
+}
+.slickSlide{
+  height:580px !important;
+  width:100%;
+  position:absolute;
+  top:100px;
+  left:0px;
+  overflow:visible !important;
 }
 #welcome{
   top:630px;
@@ -227,52 +248,12 @@ body{
 }
 #power{
   top:1260px;
-  margin-left:25px;
   overflow:hidden;
 }
-@media screen and (max-width : 1100px)
-{
-	#power{
-		margin-left:0px;
-	}
-}
-
-@media screen and (min-width : 1000px)
-{
-#safeBack {
-width:450px;
-}
-#safeP{
-width:450px;
-} 
-#instantP {
-width:450px;
-}
-#instantBack{
-width:450px;
-}
-#freeP{
-width:450px;
-}
-#freeBack{
-width:450px;
-}
-#sa{
-width:450px;
-}
-#in{
-width:450px;
-}
-#fr{
-width:450px;
-}
-}
-
 #safe{
   font-family:'Muli';
   display:block;
   position:absolute;
-  
 }
 #instant{
   font-family:'Muli';
@@ -415,8 +396,8 @@ width:450px;
   top:4100px;
 }
 */
-@media screen and (max-width:1600px){
-  /*Laptop and Desktop View*/
+@media screen and (max-width:5120px){
+    /*Laptop and Desktop View*/
   #logo{
     position:absolute;
     top:25px !important;
@@ -432,6 +413,10 @@ width:450px;
   #sign a{
     text-decoration:none;
     color:#9FEAFB;
+  }
+  #martian,
+  #credCard{
+    margin-top:50px;
   }
   #welcome{
     font-size:18pt;
@@ -473,6 +458,175 @@ width:450px;
   #instant img{
     width:99% !important;
     height:auto !important;
+    max-height:400px;
+    max-width:477px;
+  }
+  #power{
+    text-align:center;
+  }
+  #safeP,
+  #instantP,
+  #freeP{
+    text-align:center;
+    display:none;
+    z-index:-1
+  }
+  .powerBack{
+    position:absolute;
+    top:10px;
+    z-index:0;
+    height:610px;
+    width:99%;
+    margin-left:0.5%;
+    margin-right:0.5%;
+  }
+  .powerH{
+    position:relative;
+    z-index:1;
+  }
+  .powerI{
+    position:relative;
+    z-index:1;
+  }
+  #safeBack{
+    background-color:#51CBE5;
+  }
+  #instantBack{
+    background-color:#2096AD;
+  }
+  #freeBack{
+    background-color:#62BFD3;
+  }
+  #safe{
+    top:0px;
+    left:0%;
+  }
+  #instant{
+    top:0px;
+    left:33.33%;
+  }
+  #free{
+    top:0px;
+    left:66.66%;
+  }
+  #copyright{
+    font-size:11pt;
+  }
+  #dropdown{
+    display:none;
+  }
+  ul#scroll li {
+      display:inline !important;
+  }
+  #nav{
+    display:none;
+  }
+  #navbar{
+    font-size:13pt;
+  }
+  #social-icons img{
+    height:30px;
+    width:auto;
+  }
+  #merchants img{
+    right:6%;
+    width:32%;
+    height:auto;
+    max-height:503px;
+    max-width:400px;
+    /*height:500px;
+    width:auto;*/
+  }
+  #merchants div{
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:95px;
+    left:13%;
+  }
+  #gotBiz{
+
+  }
+  #wannaStart{
+
+  }
+  #wrongPlace{
+
+  }
+  #startNow{
+
+  }
+  #partner{
+
+  }
+}
+@media screen and (max-width:1600px){
+  /*Laptop and Desktop View*/
+  #logo{
+    position:absolute;
+    top:25px !important;
+    left:60px;
+  }
+  #sign{
+    color:#9FEAFB;
+    font-size:13pt !important;
+    position:absolute;
+    top:55px !important;
+    right:60px;
+  }
+  #sign a{
+    text-decoration:none;
+    color:#9FEAFB;
+  }
+  #martian,
+  #credCard{
+    margin-top:50px;
+  }
+  #whitey{
+    color:white;
+  }
+  #welcome{
+    font-size:18pt;
+  }
+  #welcome img{
+    width:150px;
+    height:150px;
+  }
+  .powerH{
+    font-size:36pt;
+    text-align:center;
+    margin-top:60px;
+  }
+  .powerP{
+    text-align:center;
+    font-size:18pt;
+  }
+  .powerI{
+    width:100%;
+    height:auto;
+    display:block;
+    float:none;
+  }
+  #safe,
+  #instant,
+  #free{
+    z-index:1;
+    height:630px;
+    width:33.33%;
+  }
+  #safe img,
+  #instant img,
+  #free img{
+    height:400px;
+    width:auto;
+    display:inline;
+    text-align:center;
+  }
+  #instant img{
+    width:99% !important;
+    height:auto !important;
+    max-height:400px;
+    max-width:477px;
   }
   #power{
     text-align:center;
@@ -530,6 +684,9 @@ width:450px;
   }
   ul#scroll li {
     display:inline !important;
+  }
+  #nav{
+    display:block;
   }
   #navbar{
     font-size:13pt;
@@ -702,6 +859,17 @@ width:450px;
 }
 @media screen and (max-width:736px){
   /*Mobile View*/
+  #ALAN,
+  #payloadCustomer,
+  #martian,
+  #credCard{
+    margin-top:50px;
+    width:70%;
+  }
+  #martian,
+  #credCard{
+    margin-top:110px;
+  }
   #welcome{
     font-size:12pt;
   }
@@ -718,7 +886,9 @@ width:450px;
     border-radius:4px;
     line-height:20px;
     display:inline;
-    margin-left:8%;
+    padding-left:8px !important;
+    margin-left:0% !important;
+    text-align:center;
   }
   #dropdown:active{
     color:#EFEFEF;
@@ -916,6 +1086,11 @@ width:450px;
   #navbar{
     font-size:10pt;
   }
+  #dropdown{
+    padding-left:8px;
+    margin-left:2%;
+    text-align:center;
+  }
 }
 @media screen and (max-width:320px){
   #startNow,
@@ -929,8 +1104,8 @@ width:450px;
     font-size:6pt;
   }
   #dropdown{
-    padding-left:20px;
-    margin-left:8%;
+    padding-left:8px;
+    margin-left:2%;
     text-align:center;
   }
 }
