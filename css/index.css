@@ -227,12 +227,52 @@ body{
 }
 #power{
   top:1260px;
+  margin-left:25px;
   overflow:hidden;
 }
+@media screen and (max-width : 1100px)
+{
+	#power{
+		margin-left:0px;
+	}
+}
+
+@media screen and (min-width : 1000px)
+{
+#safeBack {
+width:450px;
+}
+#safeP{
+width:450px;
+} 
+#instantP {
+width:450px;
+}
+#instantBack{
+width:450px;
+}
+#freeP{
+width:450px;
+}
+#freeBack{
+width:450px;
+}
+#sa{
+width:450px;
+}
+#in{
+width:450px;
+}
+#fr{
+width:450px;
+}
+}
+
 #safe{
   font-family:'Muli';
   display:block;
   position:absolute;
+  
 }
 #instant{
   font-family:'Muli';
