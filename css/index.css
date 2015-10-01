@@ -433,6 +433,7 @@ body{
   .powerP{
     text-align:center;
     font-size:18pt;
+	width:93%;
   }
   .powerI{
     width:100%;
@@ -476,13 +477,14 @@ body{
     top:10px;
     z-index:0;
     height:610px;
-    width:99%;
+    width:93%;
     margin-left:0.5%;
     margin-right:0.5%;
   }
   .powerH{
     position:relative;
     z-index:1;
+	width:93%;
   }
   .powerI{
     position:relative;
@@ -982,6 +984,9 @@ body{
     font-size:12pt;
     width:60%;
   }
+  
+ 
+  
   #safe p{
 
   }

@@ -70,74 +70,15 @@
           else {
             $('#nav').css('display','block');
           }
-          if(w>1600){
-            $('#nav').css('display','none');
-          }
+         
         }
         else{
           $('#nav').css('display','block');
         }
         if(w<=736){
-          /*
-          if((height>1260) && (height<1890)){
-            $('#powerMonitor').css('display','block');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>1890) && (height<12520)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','block');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>2520) && (height<3150)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','block');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>3150)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','block');
-          }
-          */
-          /*
-          if((height>630) && (height<1260)){
-            $('#powerMonitor').show();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>1260) && (height<1890)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').show();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>1890) && (height<2520)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').show();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>2520) && (height<31500)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').show();
-          }
-          */
-        }
+                  }
         else{
-          /*
-          $('#powerMonitor').css('display','block');
-          $('#worksMonitor').css('display','block');
-          $('#testimonialsMonitor').css('display','block');
-          $('#merchantsMonitor').css('display','block');
-          */
+      
         }
       }
       $(document).ready(function(){
@@ -185,9 +126,9 @@
   </head>
   
   <body data-spy="scroll" data-target=".navbar" data-offset="50" onscroll="scrollChange()" onresize="viewChange()" onload="viewChange()"><!--Body reacts to scrolling, resizing, and loading-->
-    <p id="sign"><a href="#">SIGN UP</a> | <a href="#">SIGN IN</a><!--Sign In/Sign Up options-->
+    <p id="sign"><a href="signup.html">SIGN UP</a> | <a href="#">SIGN IN</a><!--Sign In/Sign Up options-->
     <div id="home"><!--Div containing home section of page-->
-      <img id="logo" src="images/payload_white.png"/><!--Payload logo with text-->
+      <a href="index.html"><img id="logo" src="images/payload_white.png" alt="payload white"/></a><!--Payload logo with text-->
       <div class="container">
         <br>
         <br>
@@ -205,16 +146,16 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img id="ALAN" class="slideImage" src="images/alan.png" />
+              <img id="ALAN" class="slideImage" src="images/alan.png" alt="alan"/>
             </div>
             <div class="item">
-              <img id="payloadCustomer" class="slideImage" src="images/payload_customer.png">
+              <img id="payloadCustomer" class="slideImage" src="images/payload_customer.png" alt="payload customer">
             </div>
             <div class="item">
-              <img id="credCard" class="slideImage" src="images/credit_card_attack.png">
+              <img id="credCard" class="slideImage" src="images/credit_card_attack.png" alt="credit card">
             </div>
             <div class="item">
-              <img id="martian" class="slideImage" src="images/martian.png">
+              <img id="martian" class="slideImage" src="images/martian.png" alt="martian">
             </div>
           </div>
         </div>
@@ -233,7 +174,7 @@
       <div id="safe"><!--Panel about safety of Bitcoin-->
         <p id="sa" class="powerH">Safe</p><!--Panel Header-->
         <p id="safeP" class="powerP">Bitcoin transactions provide greater anonymity for both buyers and sellers than both cash and credit card transactions.</p><!--Panel text-->
-        <img class="powerI" src="images/safe_man.png"/><!--Panel image-->
+        <img class="powerI" src="images/safe_man.png" alt="safe man"/><!--Panel image-->
         <div class="powerBack" id="safeBack"><!--Panel background-->
         </div>
       </div>
@@ -242,7 +183,7 @@
       <div id="instant"><!--Panel about speed of Bitcoin-->
         <p id="in" class="powerH">Instant</p><!--Panel Header-->
         <p id="instantP" class="powerP">Whereas traditional wire transfers can take days, bitcoin enables users to transfer money in minutes.</p><!--Panel text-->
-        <img class="powerI" id="instantMan" src="images/instant_man.png"/><!--Panel image-->
+        <img class="powerI" id="instantMan" src="images/instant_man.png" alt="instant man"/><!--Panel image-->
         <div class="powerBack" id="instantBack"><!--Panel background-->
         </div>
       </div>
@@ -255,11 +196,9 @@
         <div class="powerBack" id="freeBack"><!--Panel background-->
         </div>
       </div>
+   
     </div>
-    <!--<div id="works"><!Div containing section about how Payload works
-    </div>-->
-    <!--<div id="testimonials"><!Div containing testimonials section of page
-    </div>-->
+ 
     <div id="merchants"><!--Div containing merchants section of page-->
       <div><!--Sub div containing message-->
         <span id="gotBiz">Got a Business?</span><br><!--Different spans for different lines with different effects-->
@@ -268,20 +207,9 @@
         <span id="startNow"><a href="#">START ACCEPTING BITCOIN IN 3 EASY STEPS</a></span><br>
         <span id="partner">BECOME A PAYLOAD PARTNER FOR FREE</span>
       </div>
-      <img src="images/elegant_man.png" class="centeredTaco" style="bottom:0"/><!--Picture-->
-    </div>
-    <div id="filler"><!--Filler used to test footer-->
-    </div>
+      <img src="images/elegant_man.png" class="centeredTaco" style="bottom:0" alt="elegant man"/><!--Picture-->
+     </div>
 
-    <!--<div id="scrollspy" class="navbar navbar-custom"><!Standard Bootstrap Scrollspy (some unnecessary divs removed)-->
-      <!--<ul id="scroll" class="nav navbar-nav"><!Unordered List of Targeted sections-->
-        <!--<li><a id="powerMonitor" href="#power">Power of Bitcoin</a></li><!List items with links to id's of section-->
-        <!--<li><a id="worksMonitor" href="#works">How It Works</a></li>
-        <!<li><a id="testimonialsMonitor" href="#testimonials">Testimonials</a></li>-->
-        <!--<li><a id="merchantsMonitor" href="#merchants">Merchants</a></li>-->
-      <!--</ul>-->
-      <!--<p id="scrollSign"><a href="#">SIGN UP</a> | <a href="#">SIGN IN</a><!Sign Up/Sign In options-->
-    <!--</div>-->
     <div id="nav"><!--Footer-->
       <div id="copyright"><!--Copyright logo and message-->
         <p>&#169; Copyright 2015 Payload</p>
@@ -292,7 +220,7 @@
         <a href="https://twitter.com/payloadpk"><img src="images/Twitter.png" alt="Follow Us On Twitter" /></a>
       </div>
       <div id="navbar"><!--Links and dividers-->
-        <a id="about" href="#">ABOUT</a>
+        <a id="about" href="about_us.html">ABOUT</a>
         <span id="dividerLine1">|</span>
         <a href="#">HELP</a>
         <span id="dividerLine2">|</span>
@@ -302,7 +230,7 @@
       </div>
     </div>
     <div id="superFooter"><!--Expanded footer menu-->
-      <img id="writing" src="images/Writing.png" /><!--Writing picture-->
+      <img id="writing" src="images/Writing.png" alt="writing" /><!--Writing picture-->
       <div id="superCopyright"><!--Copyright symbol and message-->
         <p>&#169; Copyright 2015 Payload</p>
       </div>
@@ -334,7 +262,7 @@
         <a href="https://facebook.com/payloadpk"><img src="images/Facebook.png" alt="Like Us On Facebook" /></a>
         <a href="https://twitter.com/payloadpk"><img src="images/Twitter.png" alt="Follow Us On Twitter" /></a>
       </div>
-      <img id="typing" src="images/Typing.png" /><!--Typing picture-->
+      <img id="typing" src="images/Typing.png" alt="Typing" /><!--Typing picture-->
     </div>
   </body>
 </html>

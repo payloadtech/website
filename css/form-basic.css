@@ -200,3 +200,8 @@ myspan {
 		background-image:none;
 		}
 }
+@media screen and (max-width: 850px) {
+    #image-Id{
+        display: none;
+    }
+}
