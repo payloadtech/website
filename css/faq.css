@@ -13,5 +13,10 @@ body{
 	color:#6b6c6c;
 	font-weight:bold;
 }
-
+.panel-title a{
+	color:#141414;
+ }
+ .panel-body{
+	 font-size:15px;
+	 }
 
