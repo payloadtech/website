@@ -33,7 +33,7 @@
 	</div>
         <!-- You only need this form and the form-basic.css -->
 	
-        <form id="signupForm" class="form-basic" target="_self" onsubmit="" action="javascript: postContactToGoogle()" >
+        <form id="signupForm" class="form-basic" target="_self" onsubmit="" action="" >
 		
 		<div class="form-row">
                 <label>
@@ -95,6 +95,16 @@
                             <span>News</span>
                         </label>
                     </div>
+                    
+                    <div>
+                        <label>
+                            <input type="radio" name="radio" value="Other">
+                            <span>Other</span>
+                            <input type="text" name="other" id="other">
+                        </label>
+                    </div>
+                    
+                 
 
                 </div>
             </div>
@@ -150,6 +160,14 @@
 </html>
 
 <script type="text/javascript">
+
+     $(document).ready(function(){
+                $('#signupForm').submit(function() {                 
+                    postToPaybot();
+                    postContactToGoogle();
+                    return false;
+                });
+            });
     
     function postContactToGoogle(){
         var name = $('#name').val();
@@ -158,16 +176,20 @@
 		var hear = $('input[name=radio]:checked', '#signupForm').val();
 		var volume = $('#volume').find(":selected").text();
 		var description = $('#description').val();
+        
+        if(hear === 'Other'){
+           hear = $('#other').val(); 
+        }
        
             $.ajax({
-                url: "https://docs.google.com/forms/d/1PWQcJmAADkM8-v2u1aCoVJMrmsbJI9Aob8cM30_Bbbc/formResponse",
-                data: {
-						"entry.1882011750" : name, 
-						"entry.323028150" : businessname, 
-						"entry.1329984081": email, 
-						"entry.499215506": hear, 
-						"entry.795887972" : volume, 
-						"entry.96793571": description 
+                url: "https://docs.google.com/forms/d/1lbijp53_GTGPrA9_DEDIJKP1hhGpDj5qwuMBx8bFYHE/formResponse",
+                data: {                   
+						"entry.1821259540" : name, 
+						"entry.1777871730" : businessname, 
+						"entry.390281090" : email, 
+						"entry.1285893115" : hear, 
+						"entry.1499953838" : volume, 
+						"entry.206195775": description 
 						},
                 type: "POST",
                 dataType: "xml",
@@ -177,6 +199,7 @@
 						$('#businessname').val("");
                         $('#email').val("");
 						$('#description').val("");
+                        $('#other').val(""); 
                         //Success message
                     },
                     200: function (){
@@ -184,10 +207,39 @@
 						$('#businessname').val("");
                         $('#email').val("");
 						$('#description').val("");
+                        $('#other').val(""); 
                         //Success Message
                     }
                 }
             });
-  
+
     }
+
+    function postToPaybot(){
+        var name = $('#name').val();
+		var businessname = $('#businessname').val();
+        var email = $('#email').val();
+		var hear = $('input[name=radio]:checked', '#signupForm').val();
+		var volume = $('#volume').find(":selected").text();
+		var description = $('#description').val();
+        
+        if(hear === 'Other'){
+           hear = $('#other').val(); 
+        }
+        
+         $.ajax({
+                url: "http://paybot.payload.pk/leads/notify?secret=cg60Sd4O0ktOa6Bc4LVVqIJgfzBr6CXFfkdxOsZWCM8s0w8rM4uZRQIdPyo4IQWx",
+                data: {
+                        source : "Beta Invite Request Form",
+						contact : name, 
+						business : businessname, 
+						email : email, 
+						ref : hear, 
+						estimate : volume, 
+						description : description 
+						},
+                type: "POST",
+                dataType: "xml"               
+            });     
+    }
 </script>
