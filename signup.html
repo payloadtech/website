@@ -12,6 +12,9 @@
 	 <link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
     
 	<link rel="stylesheet" href="css/form-basic.css">
+    
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
 	
 </head>
 
@@ -30,7 +33,7 @@
 	</div>
         <!-- You only need this form and the form-basic.css -->
 	
-        <form class="form-basic" method="post" action="#" >
+        <form id="signupForm" class="form-basic" target="_self" onsubmit="" action="javascript: postContactToGoogle()" >
 		
 		<div class="form-row">
                 <label>
@@ -43,21 +46,21 @@
             <div class="form-row">
                 <label>
                     <span>Name*</span>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" id="name" required>
                 </label>
             </div>
             
             <div class="form-row">
                 <label>
                     <span>Business Name*</span>
-                    <input type="text" name="name" required>
+                    <input type="text" name="businessname" id="businessname" required>
                 </label>
             </div>
 
             <div class="form-row">
                 <label>
                     <span>Email*</span>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" id="email" required>
                 </label>
             </div>
             
@@ -101,7 +104,7 @@
                 <label>
                     <span>Transaction volume per month?*<br></span>
 
-                    <select name="dropdown">
+                    <select name="dropdown" id="volume">
                         <option>1,000PRK</option>
                         <option>20,000PRK</option>
                         <option>30,000PRK</option>
@@ -130,7 +133,7 @@
             <div class="form-row">
                 <label>
                     <span>Description of your company</span>
-                    <textarea name="textarea"></textarea>
+                    <textarea id="description" name="description"></textarea>
                 </label>
             </div>
 
@@ -145,3 +148,46 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    
+    function postContactToGoogle(){
+        var name = $('#name').val();
+		var businessname = $('#businessname').val();
+        var email = $('#email').val();
+		var hear = $('input[name=radio]:checked', '#signupForm').val();
+		var volume = $('#volume').find(":selected").text();
+		var description = $('#description').val();
+       
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1PWQcJmAADkM8-v2u1aCoVJMrmsbJI9Aob8cM30_Bbbc/formResponse",
+                data: {
+						"entry.1882011750" : name, 
+						"entry.323028150" : businessname, 
+						"entry.1329984081": email, 
+						"entry.499215506": hear, 
+						"entry.795887972" : volume, 
+						"entry.96793571": description 
+						},
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function (){ 
+                        $('#name').val("");
+						$('#businessname').val("");
+                        $('#email').val("");
+						$('#description').val("");
+                        //Success message
+                    },
+                    200: function (){
+                        $('#name').val("");
+						$('#businessname').val("");
+                        $('#email').val("");
+						$('#description').val("");
+                        //Success Message
+                    }
+                }
+            });
+  
+    }
+</script>
