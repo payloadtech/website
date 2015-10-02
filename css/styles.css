@@ -1,0 +1,484 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face
+{
+	font-family: 'Muli';
+    src:url(../fonts/Muli.ttf) format('truetype');
+}
+
+#nav-inverse{
+	background:#dfdfdf;
+	border:#dfdfdf;
+	}
+
+@font-face{
+  font-family:"fontAwesome";
+  src:url(../fonts/fontawesome-webfont.eot);
+  src:url(../fonts/fontawesome-webfont.svg);
+  src:url(../fonts/fontawesome-webfont.ttf);
+  src:url(../fonts/fontawesome-webfont.woff);
+  src:url(../fonts/fontawesome-webfont.woff2);
+  src:url(../fonts/FontAwesome.otf);
+}
+@font-face{
+  font-family:"glyphicon";
+  src:url(../fonts/glyphicons-halflings-regular.eot);
+  src:url(../fonts/glyphicons-halflings-regular.svg);
+  src:url(../fonts/glyphicons-halflings-regular.ttf);
+  src:url(../fonts/glyphicons-halflings-regular.woff);
+  src:url(../fonts/glyphicons-halflings-regular.woff2);
+  src:url(../fonts/glyphicons-halflings-regular.otf);
+}
+
+
+body
+{   
+	font-family:'Muli';
+	
+}
+
+#header
+{
+	background-color:#00718f;
+	height:39px;
+	margin-top:-20px;
+	
+}
+
+#about1
+{
+	margin-left:67px;
+	font-size:25px;
+	color:#C0C0D8;
+	margin-top:4px;   
+	
+}
+#img_pdf
+{
+	float:right;
+	margin-right:40px;
+	margin-top:7px;
+	
+}
+
+
+
+
+
+#img_pdf1
+{
+	display:none;	
+	
+}
+
+#presentation1
+{
+	display:none;
+	
+
+	color:black;
+	font-size:19px;	
+}
+
+
+#presentation
+{
+
+	float:right;
+	
+	margin-right:10px;
+	margin-top:4px;
+	color:#d4d4d4;
+	font-size:19px;
+	
+	
+	
+}
+
+#main_body
+{
+	background-color:#ffffff;
+	height:1100px;
+	
+	
+}
+
+
+#Details p
+{
+	color:#00718f;
+	font-size:18px;
+	
+}
+#info h1
+{
+	color:#bbbbbb;
+	
+	font-size:32px;
+	
+	
+}
+#info p
+{
+	color:#9b9b9b;
+	font-size:26px;
+	
+}
+
+
+#special_mentions
+{
+	display:none;
+	color:#000;
+}
+
+
+#team
+{
+	display:none;
+
+}
+#mob_team
+{
+	display:none;
+
+}
+
+
+#Our_Achievements
+{
+	display:none; 
+
+}
+
+a:link
+{ text-decoration:none ;
+}
+
+a:visited
+{
+	text-decoration:none ;
+}
+
+a:hover
+{
+	text-decoration:none ;
+}
+a:active
+{
+	text-decoration:none ;
+}
+
+#mob_what_we_do
+{
+	display:none ;
+}
+
+#nav{
+  height:66px;
+  width:100%;
+  margin:0px;
+  /*margin-bottom:0px !important;*/
+  background-color:#EFEFEF;
+  text-align:center;
+  line-height:55px;
+  /**border-top-style:solid;
+  border-top-width:12px;
+  border-top-color:#FFB83D;**/
+  padding-left:0.3%;
+  padding-right:0.3%;
+  padding-top:4px;
+  padding-bottom:4px;
+  opacity:1;
+  left:0;
+  bottom:0;
+  clear:both;
+  position:fixed;
+}
+#nav a{
+  color:black;
+  text-decoration:none;
+}
+
+#copyright{
+  color:#B4B4B4;
+  width:auto;
+  margin-left:5%;
+  float:left;
+  position:fixed;
+}
+#social-icons{
+  display:inline;
+  float:right;
+  position:fixed;
+  right:0%;
+  margin-right:5%;
+}
+#dropdown{
+  font-size:16pt;
+  color:#EFEFEF;
+  border:none;
+  background-color:transparent;
+  height:40px;
+  width:40px;
+  display:inline;
+  z-index:2;
+}
+#navbar{
+  width:auto;
+  color:black;
+  font-family:'Muli', sans-serif;
+  text-style:none;
+  text-align:center;
+  position:relative;
+}
+#navbar span{
+  margin-left:0.8%;
+  margin-right:0.8%;
+}
+#download{
+  background-color:#FF032C;
+  color:white !important;
+  padding-left:8px;
+  padding-right:8px;
+}
+
+
+
+
+@media screen and (max-width:1600px){
+	 #copyright{
+    font-size:11pt;
+  }
+  #dropdown{
+    display:none;
+  }
+  ul#scroll li {
+    display:inline !important;
+  }
+  #navbar{
+    font-size:13pt;
+  }
+  #social-icons img{
+    height:30px;
+    width:auto;
+  }
+	
+	
+	
+}
+
+@media screen and (max-width:5120px){
+  #copyright{
+    font-size:11pt;
+  }
+  #dropdown{
+    display:none;
+  }
+  ul#scroll li {
+      display:inline !important;
+  }
+  #nav{
+    display:none;
+  }
+  #navbar{
+    font-size:13pt;
+  }
+  #social-icons img{
+    height:30px;
+    width:auto;
+  }	
+	
+	
+}
+
+
+
+@media screen and (max-width:1024px){
+  /*Tablet View*/
+  #welcome{
+    font-size:18pt;
+  }
+  #welcome img{
+    width:130px;
+    height:130px;
+  }
+  #copyright{
+    font-size:8pt;
+    margin-left:4%;
+  }
+  #dropdown{
+    display:none;
+  }
+  ul#scroll li{
+    display:inline !important;
+  }
+  #navbar{
+    font-size:8.5pt;
+  }
+  #social-icons{
+    margin-right:4%;
+  }
+  #social-icons img{
+    height:20px;
+    width:auto;
+  }
+}
+
+@media screen and (max-width:767px){
+  ul#scroll li a{
+    display:inline !important;
+  }
+  #scroll{
+    position:relative;
+    bottom:6px;
+    left:15px;
+  }
+  #scroll li{
+    margin-right:-5px;
+  }
+}
+
+@media screen and (max-width:736px){
+  /*Mobile View*/
+  #welcome{
+    font-size:12pt;
+  }
+  #welcome img{
+    width:120px;
+    height:120px;
+    margin-top:130px;
+    margin-bottom:30px;
+  }
+  #dropdown{
+    color:#FFB83D;
+    border-style:solid;
+    border-color:#FFB83D;
+    border-radius:4px;
+    line-height:20px;
+    display:inline;
+    padding-left:8px !important;
+	margin-left:0% !important;
+	text-align:center;
+  }
+  #dropdown:active{
+    color:#EFEFEF;
+    background-color:#FFB83D;
+  }
+  ul#scroll li{
+    padding-top:0px;
+    display:inline!important;
+  }
+  ul#scroll li a{
+    padding-top:0px;
+    display:inline !important;
+  }
+  #scrollspy{
+    padding-top:0px;
+    overflow:hidden;
+  }
+  #nav{
+    width:100%;
+    height:76px;
+    z-index:5;
+    height:66px;
+    /**border-top-style:solid;
+    border-top-width:12px;
+    border-top-color:#FFB83D;**/
+  }
+  #copyright{
+    display:block;
+  }
+  #navbar{
+    height:67px;
+    width:100%;
+    font-size:12pt;
+    background-color:#EFEFEF;
+   /** border-top-style:solid;
+    border-top-width:12px;
+    border-top-color:#FFB83D;**/
+    position:fixed;
+    left:0px;
+    bottom:64px;
+    display:none;
+  }
+  #social-icons{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    margin-bottom:4px;
+    margin-left:2%;
+  }
+  #social-icons img{
+    height:20px;
+    width:auto;
+  }
+  #presentation
+  {
+	  display:none;
+	  
+   }
+   #img_pdf
+   {
+	   display:none;
+	   
+	}
+	
+ #presentation1
+ {
+	 display:inherit;
+	 
+  }  
+  #img_pdf1
+  {
+	  display:inherit;
+	  
+   }
+  
+}
+
+
+@media screen and (max-width:480px){
+  #sign{
+    margin-top:40px;
+    right:16%;
+  }
+
+ 
+  #navbar{
+    font-size:10pt;
+  }
+  #dropdown{
+    padding-left:8px;
+    margin-left:2%;
+    text-align:center;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:320px){
+  
+  #navbar{
+    font-size:9pt;
+  }
+  #copyright p{
+    font-size:6pt;
+  }
+  #dropdown{
+    padding-left:8px;
+    margin-left:2%;
+    text-align:center;
+  }
+}
+
+
+
+
+
+
+

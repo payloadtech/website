@@ -19,4 +19,24 @@ body{
  .panel-body{
 	 font-size:15px;
 	 }
-
+	@media screen and (min-width : 1000px){ 
+	 #question_img{
+		 margin-bottom:8%;
+		 margin-top:4%;
+		 }
+	}
+	@media screen and (max-width : 1000px){ 
+	 #question_img{
+		 margin-bottom:15%;
+		 margin-top:4%;
+		 }
+	}
+	
+	
+	@media screen and (max-width : 700px){
+		#question_img{
+			
+			margin-bottom:27%;
+			
+			}
+		}

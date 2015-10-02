@@ -4,12 +4,13 @@ html, body{
 
 body{
   font-family:'Muli', sans-serif;
+  src:url(../fonts/Muli.ttf);
 }
-p{
-	color:#000000
+
+
+span{
+	color:#000000;
 	}
-	span{
-		color:#000000;}
 @font-face{
   font-family:"fontAwesome";
   src:url(fonts/fontawesome-webfont.eot);
