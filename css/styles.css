@@ -6,12 +6,8 @@
 {
 	font-family: 'Muli';
     src:url(../fonts/Muli.ttf) format('truetype');
+	 
 }
-
-#nav-inverse{
-	background:#dfdfdf;
-	border:#dfdfdf;
-	}
 
 @font-face{
   font-family:"fontAwesome";
@@ -38,6 +34,21 @@ body
 	font-family:'Muli';
 	
 }
+#Contact_US
+{
+	display:none;
+	
+	
+	
+}
+#Contact_US p
+{
+	color:#777777;
+	font-size:17px;
+	
+	
+}
+
 
 #header
 {
@@ -128,10 +139,13 @@ body
 }
 
 
+
 #special_mentions
 {
 	display:none;
 	color:#000;
+	
+	
 }
 
 
@@ -435,6 +449,8 @@ a:active
   {
 	  display:inherit;
 	  
+	  
+	  
    }
   
 }
@@ -475,10 +491,3 @@ a:active
     text-align:center;
   }
 }
-
-
-
-
-
-
-

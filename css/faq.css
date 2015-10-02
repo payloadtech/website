@@ -21,7 +21,7 @@ body{
 	 }
 	@media screen and (min-width : 1000px){ 
 	 #question_img{
-		 margin-bottom:8%;
+		 margin-bottom:12%;
 		 margin-top:4%;
 		 }
 	}
@@ -36,7 +36,7 @@ body{
 	@media screen and (max-width : 700px){
 		#question_img{
 			
-			margin-bottom:27%;
+			margin-bottom:32%;
 			
 			}
 		}

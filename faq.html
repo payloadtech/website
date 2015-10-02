@@ -6,15 +6,14 @@
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 	<link rel="shortcut icon" href="http://www.favicon-generator.org/favicon-generator/htdocs/favicons/2015-07-30/7279aa97a8953329f7d7369ca1953d22.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/faq.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"  />
 	
-	
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
   
     <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/index.css" />
-      <link rel="stylesheet" type="text/css" href="css/faq.css" />
-  
 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -24,63 +23,46 @@
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script>
-	
-   /*   function viewChange(){
+	var w = window.outerWidth;
+      function viewChange(){
         w = window.outerWidth;
-        if(w<=736){
-          document.getElementById('navbar').style.display="none";
-        }
-        else{
-          document.getElementById('navbar').style.display="inline";
-        }
-        if(w<=1024){
-          $('.powerBack').css({top:10, position:'absolute'});
-          $('.powerP').css({display:'block'});
-        }
-        else if(w>=1024){
-          $('.powerP').css({display:'none'});
-        }
-        //$('#scrollspy').css('margin-bottom','64px');
-        scrollChange();
-      }
-    */
-	
-
-function viewChange(){
-	
-		var w = window.outerWidth;
 		
 		if(w>600){
 			if(w>714){
 				if(w>1200){
-					$('#pageHead').css('height',250);
+					$('#pageHead').css('height',260);
 				}
 				else{
-					$('#pageHead').css('height',190);
+					$('#pageHead').css('height',200);
 				}
+				
 			}
 			else{
-				$('#pageHead').css('height',w*0.30);
-		}
+				$('#pageHead').css('height',w*0.32);
+			}
+			
 		}
 		else if(w<600 && w>470){
-			$('#pageHead').css('height',w*0.33);
-		}
-		else if(w<470 && w>400){
 			$('#pageHead').css('height',w*0.35);
 		}
-		else if(w<400 && w>350){
+		else if(w<470 && w>400){
 			$('#pageHead').css('height',w*0.37);
 		}
-		else if(w<350 && w>310){
+		else if(w<400 && w>350){
 			$('#pageHead').css('height',w*0.39);
 		}
-		else if(w<310 && w>280){
+		else if(w<350 && w>310){
 			$('#pageHead').css('height',w*0.41);
 		}
-		else if(w<280){
+		else if(w<310 && w>280){
 			$('#pageHead').css('height',w*0.43);
 		}
+		else if(w<280){
+			$('#pageHead').css('height',w*0.45);
+		}
+		
+		
+		
         if(w<=736){
           document.getElementById('navbar').style.display="none";
         }
@@ -97,8 +79,7 @@ function viewChange(){
         //$('#scrollspy').css('margin-bottom','64px');
         scrollChange();
       }
-
-	  function drop(){
+      function drop(){
         if(document.getElementById('navbar').style.display=="none"){
           document.getElementById('navbar').style.display="inline";
           //$('#scrollspy').css('margin-bottom','119px');
@@ -240,16 +221,16 @@ function viewChange(){
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" onscroll="scrollChange()" onresize="viewChange()" onload="viewChange()">
 
-<div class="page-header" id="pageHeader" >
+<div class="page-header" id="pageHead">
 <div class="container">
 
 <div class="navbar-text" style="width:100% ; height:inherit">
-<a href="index.html"><img  src="images/logoWhite.png" height="50" alt="payload"></a>Payload
+<img  src="images/logoWhite.png" height="50" alt="payload">Payload
 <img class="img-responsive" style="float:right" src="images/bitCoin.png" alt="bitCoin"/>
 </div>
 
 	<div class="col-lg-12">
-		<img class="img-responsive" src="images/intro.png" style="margin-top:4%" alt="Learn About BitCoin"/>
+		<img class="img-responsive" src="images/intro.png" style="margin-top:5.5%" alt="Learn About BitCoin"/>
 	</div>
 	
 <!-- Bootstrap FAQ - START -->
@@ -262,12 +243,12 @@ function viewChange(){
 </div>
     </div>
     </div>
-    <br/>
+    <br />
 
     <div class="panel-group" id="accordion">
         <div class="faqHeader">Frequently Asked Questions!</div>
       
-      <!--  What is bitcoin ? -->
+     <!--  What is bitcoin ? -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -417,13 +398,11 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
 		
     
-    
-     <div>
+		<div>
   	
           <img id="question_img" class="img-responsive" src="images/question.png" alt="Got A Question Of Your Own ?" >					  
      </div>
-	
-	
+
         
     </div>
 </div>
@@ -476,9 +455,9 @@ Bitcoin is the first digital currency that is completely distributed. The networ
       </div>
       <div id="navbar"><!--Links and dividers-->
        
-        <a id="homeLink" href="index.html">HOME</a>
+        <a id="homeLink" href="#">HOME</a>
         <span id="dividerLine1">|</span>
-        <a id="about" href="about_us.html">ABOUT</a>
+        <a id="about" href="#">ABOUT</a>
         <span id="dividerLine2">|</span>
         <a id="help" href="#">HELP</a>
         <span id="dividerLine3">|</span>
