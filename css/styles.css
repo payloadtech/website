@@ -34,21 +34,6 @@ body
 	font-family:'Muli';
 	
 }
-#Contact_US
-{
-	display:none;
-	
-	
-	
-}
-#Contact_US p
-{
-	color:#777777;
-	font-size:17px;
-	
-	
-}
-
 
 #header
 {
@@ -123,6 +108,9 @@ body
 	font-size:18px;
 	
 }
+
+
+
 #info h1
 {
 	color:#bbbbbb;
@@ -140,13 +128,30 @@ body
 
 
 
+
+
+
 #special_mentions
 {
 	display:none;
-	color:#000;
 	
 	
 }
+#Contact_US
+{
+	display:none;
+	
+	
+	
+}
+#Contact_US p
+{
+	color:#777777;
+	font-size:17px;
+	
+	
+}
+
 
 
 #team
@@ -179,6 +184,8 @@ a:visited
 a:hover
 {
 	text-decoration:none ;
+	color:#3546CB;
+	
 }
 a:active
 {
@@ -491,3 +498,10 @@ a:active
     text-align:center;
   }
 }
+
+
+
+
+
+
+

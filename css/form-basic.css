@@ -13,20 +13,14 @@ html{
     padding: 10px 5px;
     margin: 100px auto;
     box-sizing: border-box;
-
-  
-   
-
     font: bold 14px MyMUli;
-    text-align: center;
-	
+    text-align: center;	
 }
 
 
 #column-content {
 	max-width: 740px;
-	margin: 0 auto;
-  
+	margin: 0 auto; 
   font: 26px MyMUli;
   color:#c5c5c5;
 }
@@ -199,9 +193,4 @@ myspan {
 		
 		background-image:none;
 		}
-}
-@media screen and (max-width: 850px) {
-    #image-Id{
-        display: none;
-    }
 }

@@ -181,33 +181,27 @@
            hear = $('#other').val(); 
         }
        
-            $.ajax({
-                url: "https://docs.google.com/forms/d/1lbijp53_GTGPrA9_DEDIJKP1hhGpDj5qwuMBx8bFYHE/formResponse",
-                data: {                   
-						"entry.1821259540" : name, 
-						"entry.1777871730" : businessname, 
-						"entry.390281090" : email, 
-						"entry.1285893115" : hear, 
-						"entry.1499953838" : volume, 
-						"entry.206195775": description 
+             $.ajax({
+                url: "https://docs.google.com/forms/d/1PWQcJmAADkM8-v2u1aCoVJMrmsbJI9Aob8cM30_Bbbc/formResponse",
+                data: {
+						"entry.1882011750" : name, 
+						"entry.323028150" : businessname, 
+						"entry.1329984081": email, 
+						"entry.499215506": hear, 
+						"entry.795887972" : volume, 
+						"entry.96793571": description 
 						},
                 type: "POST",
                 dataType: "xml",
                 statusCode: {
                     0: function (){ 
-                        $('#name').val("");
-						$('#businessname').val("");
-                        $('#email').val("");
-						$('#description').val("");
-                        $('#other').val(""); 
+                        alert("Thanks! Your response has been recorded.");
+                        location = "http://www.payload.pk/";                 
                         //Success message
                     },
                     200: function (){
-                        $('#name').val("");
-						$('#businessname').val("");
-                        $('#email').val("");
-						$('#description').val("");
-                        $('#other').val(""); 
+                        alert("Thanks! Your response has been recorded.");
+                        location = "http://www.payload.pk/"; 
                         //Success Message
                     }
                 }
