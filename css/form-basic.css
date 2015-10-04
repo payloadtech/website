@@ -194,3 +194,46 @@ myspan {
 		background-image:none;
 		}
 }
+
+@media screen and (max-width: 850px) {
+    #image-Id{
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px){
+
+.form-basic input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 220px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+	border-radius:5px;
+}
+
+
+.form-basic textarea{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 220px;
+    height: 80px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px MyMUli;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+	border-radius:5px;
+}
+
+.form-basic select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    max-width: 220px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+	border-radius:5px;
+}
