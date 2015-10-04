@@ -1,9 +1,16 @@
 html, body{
   height:100%;
 }
+
 body{
   font-family:'Muli', sans-serif;
+  src:url(../fonts/Muli.ttf);
 }
+
+
+span{
+	color:#000000;
+	}
 @font-face{
   font-family:"fontAwesome";
   src:url(fonts/fontawesome-webfont.eot);
@@ -25,8 +32,8 @@ body{
 @font-face{
   font-family:"Muli";
   src:url(fonts/Muli-Regular.ttf);
-/*src:url(fonts/Muli-Light.ttf);
-  src:url(fonts/Muli-Italic.ttf);
+  src:url(fonts/Muli-Light.ttf);
+  /*src:url(fonts/Muli-Italic.ttf);
   src:url(fonts/Muli-LightItalic.ttf);*/
 }
 .font{
@@ -433,6 +440,7 @@ body{
   .powerP{
     text-align:center;
     font-size:18pt;
+	width:93%;
   }
   .powerI{
     width:100%;
@@ -483,6 +491,7 @@ body{
   .powerH{
     position:relative;
     z-index:1;
+	width:93%;
   }
   .powerI{
     position:relative;
@@ -982,6 +991,9 @@ body{
     font-size:12pt;
     width:60%;
   }
+  
+ 
+  
   #safe p{
 
   }
