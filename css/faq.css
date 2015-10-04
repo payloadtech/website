@@ -13,8 +13,32 @@ body{
 	color:#6b6c6c;
 	font-weight:bold;
 }
-a:hover{
-    text-decoration: none;
-}
+.panel-title a{
+	color:#141414;
+ }
+ .panel-body{
+	 font-size:15px;
+	 }
+	@media screen and (min-width : 1000px){ 
+	 #question_img{
+		 margin-bottom:12%;
+		 margin-top:4%;
+		 }
+	}
+	@media screen and (max-width : 1000px){ 
+	 #question_img{
+		 margin-bottom:15%;
+		 margin-top:4%;
+		 }
+	}
+	
+	
+	@media screen and (max-width : 700px){
+		#question_img{
+			
+			margin-bottom:32%;
+			
+			}
+		}
 
 
