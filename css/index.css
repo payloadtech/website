@@ -411,7 +411,7 @@ span{
     left:60px;
   }
   #sign{
-    color:#9FEAFB;
+    color:#fff;
     font-size:13pt !important;
     position:absolute;
     top:55px !important;
@@ -419,7 +419,7 @@ span{
   }
   #sign a{
     text-decoration:none;
-    color:#9FEAFB;
+    color:#fff;
   }
   #martian,
   #credCard{
@@ -577,7 +577,7 @@ span{
     left:60px;
   }
   #sign{
-    color:#9FEAFB;
+    color:#fff;
     font-size:13pt !important;
     position:absolute;
     top:55px !important;
@@ -585,7 +585,7 @@ span{
   }
   #sign a{
     text-decoration:none;
-    color:#9FEAFB;
+    color:#fff;
   }
   #martian,
   #credCard{
