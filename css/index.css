@@ -1,11 +1,12 @@
 html, body{
-  height:100%;
+
 }
 
 body{
   font-family:'Muli', sans-serif;
   src:url(../fonts/Muli.ttf);
 }
+
 
 span{
 	color:#000000;
@@ -410,7 +411,7 @@ span{
     left:60px;
   }
   #sign{
-    color:#fff;
+    color:#9FEAFB;
     font-size:13pt !important;
     position:absolute;
     top:55px !important;
@@ -418,7 +419,7 @@ span{
   }
   #sign a{
     text-decoration:none;
-    color:#fff;
+    color:#9FEAFB;
   }
   #martian,
   #credCard{
@@ -576,7 +577,7 @@ span{
     left:60px;
   }
   #sign{
-    color:#fff;
+    color:#9FEAFB;
     font-size:13pt !important;
     position:absolute;
     top:55px !important;
@@ -584,8 +585,7 @@ span{
   }
   #sign a{
     text-decoration:none;
-    color:#fff;
-	
+    color:#9FEAFB;
   }
   #martian,
   #credCard{
