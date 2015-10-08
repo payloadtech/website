@@ -16,6 +16,10 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/faq.css" />
+    
+ 
+    
+    
 	<script>
 	var w = window.outerWidth;
       function viewChange(){
@@ -150,7 +154,7 @@
         <div class="faqHeader">Frequently Asked Questions!</div>
       
      <!--  What is bitcoin ? -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseOne">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is bitcoin?</a>
@@ -169,7 +173,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
               
        <!-- How does Bitcoin works -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseTwo">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How does Bitcoin work?</a>
@@ -192,7 +196,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
         
      <!-- Who created bitcoin > -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseThree">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Who created Bitcoin?</a>
@@ -209,7 +213,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
 
        <!-- Who controls the Bitcoin Network -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseFour">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Who controls the Bitcoin network?</a>
@@ -224,7 +228,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
         
         <!-- How are bitcopins created ? -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseFive">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How are Bitcoins created?</a>
@@ -238,7 +242,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
     
    	    <!-- Why do people trust Bitcoin ? -->
-        <div class="panel panel-default">
+        <div class="panel panel-default" data-toggle="collapse" data-target="#collapseSeven">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Why do people trust Bitcoin?</a>
@@ -255,7 +259,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
     
     	<!-- Is Bitcoin anonymous ? --> 
-         <div class="panel panel-default">
+         <div class="panel panel-default" data-toggle="collapse" data-target="#collapseEight">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Is Bitcoin anonymous?</a>
@@ -269,7 +273,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         </div>
         
         <!-- Is Bitcoin legal ? -->
-         <div class="panel panel-default">
+         <div class="panel panel-default" data-toggle="collapse" data-target="#collapseNine">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Is Bitcoin legal?</a>
@@ -283,7 +287,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
         </div>       
         <!-- What determines  Bitcoin Price ? -->
-         <div class="panel panel-default">
+         <div class="panel panel-default" data-toggle="collapse" data-target="#collapseTen">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What determines Bitcoin's price?</a>
@@ -334,25 +338,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
         transform: rotate(90deg);
         color: #454444;
     }
-	
-    .panel[data-toggle1="collapse"]:after {
-       
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
 
-    .panel [data-toggle1="collapse"].collapsed:after {
-        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        color: #454444;
-    }
 </style>
 
 <!-- Bootstrap FAQ - END -->
