@@ -105,58 +105,7 @@
           $('#nav').css('display','block');
         }
         if(w<=736){
-          /*
-          if((height>1260) && (height<1890)){
-            $('#powerMonitor').css('display','block');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>1890) && (height<12520)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','block');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>2520) && (height<3150)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','block');
-            $('#merchantsMonitor').css('display','none');
-          }
-          else if((height>3150)){
-            $('#powerMonitor').css('display','none');
-            $('#worksMonitor').css('display','none');
-            $('#testimonialsMonitor').css('display','none');
-            $('#merchantsMonitor').css('display','block');
-          }
-          */
-          /*
-          if((height>630) && (height<1260)){
-            $('#powerMonitor').show();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>1260) && (height<1890)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').show();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>1890) && (height<2520)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').show();
-            $('#merchantsMonitor').hide();
-          }
-          else if((height>2520) && (height<31500)){
-            $('#powerMonitor').hide();
-            $('#worksMonitor').hide();
-            $('#testimonialsMonitor').hide();
-            $('#merchantsMonitor').show();
-          }
-          */
+  
         }
         else{
           /*
@@ -167,47 +116,7 @@
           */
         }
       }
-      $(document).ready(function(){
-        $('#safe').hover(function(){
-          if(w>1024){
-            $('#safeP').slideToggle(736);
-            $('#safeBack').animate({top:'+=300px'},736);
-          }
-        },
-        function(){
-          if(w>1024){
-            $('#safeP').slideToggle(736);
-            $('#safeBack').animate({top:'-=300px'},736);
-          }
-        });
-        $('#instant').hover(function(){
-          if(w>1024){
-            $('#instantP').slideToggle(736);
-            $('#instantBack').animate({top:'+=300px'},736);
-          }
-        },
-        function(){
-          if(w>1024){
-            $('#instantP').slideToggle(736);
-            $('#instantBack').animate({top:'-=300px'},736);
-          }
-        });
-        $('#free').hover(function(){
-          if(w>1024){
-            $('#freeP').slideToggle(736);
-            $('#freeBack').animate({top:'+=340px'},736);
-          }
-        },
-        function(){
-          if(w>1024){
-            $('#freeP').slideToggle(736);
-            $('#freeBack').animate({top:'-=340px'},736);
-          }
-        });
-        $(window).scroll(function(){
-
-        });
-      });
+     
     </script>
 
 </head>
@@ -258,7 +167,7 @@ Bitcoin is the first digital currency that is completely distributed. The networ
                 </div>
             </div>
         </div>
-           
+              
        <!-- How does Bitcoin works -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -387,7 +296,9 @@ Bitcoin is the first digital currency that is completely distributed. The networ
             </div>
         </div>
 		<div>	
-          <img id="question_img" class="img-responsive" src="images/question.png" alt="Got A Question Of Your Own ?" >					  
+          <a href="mailto:hey@payload.pk?subject=I+Like+Bitcoin">
+          <img id="question_img" class="img-responsive" src="images/question.png" alt="Got A Question Of Your Own ?" >	
+          </a>				  
      </div> 
     </div>
 </div>
@@ -415,6 +326,25 @@ Bitcoin is the first digital currency that is completely distributed. The networ
     }
 
     .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+	
+    .panel[data-toggle1="collapse"]:after {
+       
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel [data-toggle1="collapse"].collapsed:after {
         /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
