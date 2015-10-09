@@ -1,0 +1,22 @@
+/* TEAM */
+	Chief:Amin Shah Gilani
+	Twitter: @amingilani
+	From:Lahore, Punjab, Pakistan
+
+	UI Designer: Sulaiman Khan
+	Twitter: @sulykhan
+  From:Lahore, Punjab, Pakistan
+
+	Web Designer: Nimra Qasim
+  Contact: nimra.qasim94 [at] gmail.com
+  From:Lahore, Punjab, Pakistan
+
+	Backend Developer: Waleed Ashraf
+	Twitter: @WaleedAshraf01
+  From:Lahore, Punjab, Pakistan
+
+  Intern Web Developer: Hira Saeed
+	From:Lahore, Punjab, Pakistan
+
+  Intern Web Developer: Wajiha Karim
+	From:Lahore, Punjab, Pakistan
